@@ -41,9 +41,9 @@ LocationManager locationM;
         tv=(TextView) findViewById(R.id.textView2);
         b=(Button)findViewById(R.id.button);
         b.setOnClickListener(this);
-        double la=getBestLocation().getLatitude();
+//        double la=getBestLocation().getLatitude();
 
-        tv.setText(String.valueOf(la));
+//        tv.setText(String.valueOf(la));
 
 
 //        try {
@@ -57,7 +57,7 @@ LocationManager locationM;
 //            // TODO: handle exception
 //        }
     }
-    LocationListener locationListener = new LocationListener() {
+    /*LocationListener locationListener = new LocationListener() {
         @Override
         public void onLocationChanged(@NonNull Location location) {
                if (curLocation == null) {
@@ -118,7 +118,7 @@ LocationManager locationM;
             return gpslocation;
         }
         return null;
-    }
+    }*/
     private void showSmallNotification(String message){
         String CHANNEL_ID = NotificationHelper.CHANNEL_ONE_ID;
         String CHANNEL_NAME = "Notification";
